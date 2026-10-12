@@ -1,40 +1,38 @@
-# PeopleDesk — Human Resource Management System (HRMS)
+# PeopleDesk - HRMS Landing Page
 
-A responsive, complete Human Resource Management System (HRMS) landing page and interactive portal built with React and Vite.
+Final round assignment submission for HRMS landing page.
 
-## Overview
-PeopleDesk centralizes staff directories, multi-state payroll calculations, daily attendance tracking, leave requests, candidate pipelines, and new hire onboarding in one clean portal.
+This project is a landing page built for an HR and payroll software platform called PeopleDesk. It includes an interactive hero dashboard, product feature modules, tabbed live demo section, customer stories, pricing tiers, and FAQ.
 
-## Core Modules & Features
-- **Centralized Employee Directory**: Searchable employee database, department hierarchies, and organizational charts.
-- **Payroll & Direct Deposit**: Multi-state tax withholding calculation, benefit deductions, and ACH direct deposit scheduling.
-- **Time & Attendance Tracking**: Shift clock-ins, remote check-ins, and overtime timesheet approvals.
-- **Paid Time Off (PTO) Management**: Annual leave, sick days, and festival vacation requests with manager approval workflows.
-- **Hiring & Job Applications (ATS)**: Job openings, candidate review pipeline, and structured interview feedback.
-- **New Hire Onboarding**: Welcome packets, tax forms (W-4 / I-9), and digital onboarding checklists.
-- **Performance Reviews**: Quarterly review cycles, team goal tracking, and manager check-in notes.
-- **Employee Self-Service (ESS)**: Mobile and web portal for downloading payslips, checking leave balances, and updating bank details.
+## What is in this project
+- **Hero Section**: Shows headline, key metrics strip, and an interactive dashboard preview with working tabs (Directory, Payroll, Attendance, Leave requests with approval toggle, and Performance reviews). Also includes live search filtering.
+- **Features Section**: Bento grid showcasing the 10 core HR modules including Employee Directory, Payroll, Time & Attendance, PTO, Hiring ATS, Onboarding, Reviews, Expenses, Health Benefits, and Self-Service Portal.
+- **Interactive Tour**: Tabbed section demonstrating payroll batch processing, time tracking kiosk with map pin, candidate recruitment stages, OKR progress bars, and headcount reports.
+- **Solutions**: Breakdown by team size (Small Businesses 1-50, Growing Teams 50-250, Enterprises 250+).
+- **Integrations**: Connections with Slack, Google Calendar, QuickBooks, Okta, and LinkedIn.
+- **Security & Compliance**: SOC 2 Type II, 256-bit encryption, role-based permissions, and labor law compliance.
+- **Testimonials**: Case studies from HR directors and people operations managers.
+- **Pricing**: Monthly and annual billing switcher with 20% discount calculation.
+- **FAQ**: Accordion dropdown answering common payroll and data questions.
 
 ## Tech Stack
-- **Framework**: React 19
-- **Build Tool**: Vite
-- **Styling**: CSS (Design System Tokens, CSS Grid, Flexbox)
-- **Icons**: Lucide React
+- React 19
+- Vite
+- Pure CSS (responsive layout, flexbox, CSS grid)
+- Lucide React icons
 
-## Setup & Running Locally
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/arounesharoulor/Landing-page.git
-   ```
-2. Install dependencies:
+## Running locally
+1. Install dependencies:
    ```bash
    npm install
    ```
-3. Start local development server:
+
+2. Start the dev server:
    ```bash
    npm run dev
    ```
-4. Build for production:
+
+3. Build production bundle:
    ```bash
    npm run build
    ```

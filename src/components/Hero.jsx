@@ -9,15 +9,6 @@ const employeeList = [
   { id: 5, name: 'Senthil Kumar', role: 'DevOps & Cloud Engineer • Madurai, TN', dept: 'Engineering', meta: 'Onboarding Checklist (3/4)', status: 'Onboarding', avatar: 'SK', color: 'green' }
 ];
 
-const navBtnStyle = {
-  background: 'transparent',
-  border: 'none',
-  width: '100%',
-  textAlign: 'left',
-  cursor: 'pointer',
-  fontFamily: 'inherit'
-};
-
 const Hero = () => {
   const [activeTab, setActiveTab] = useState('directory');
   const [searchQuery, setSearchQuery] = useState('');
@@ -59,53 +50,57 @@ const Hero = () => {
             <div className="dash-sidebar">
                 <div className="dash-logo">PeopleDesk</div>
                 <div className="dash-nav">
-                    <button
-                      type="button"
+                    <div
+                      role="button"
+                      tabIndex={0}
                       className={`dash-nav-item ${activeTab === 'directory' ? 'active' : ''}`}
                       onClick={() => setActiveTab('directory')}
-                      style={{ navBtnStyle, background: activeTab === 'directory' ? '#161822' : 'transparent' }}
+                      style={{ cursor: 'pointer' }}
                     >
                       <Users size={16} /> Directory
-                    </button>
-                    <button
-                      type="button"
+                    </div>
+                    <div
+                      role="button"
+                      tabIndex={0}
                       className={`dash-nav-item ${activeTab === 'payroll' ? 'active' : ''}`}
                       onClick={() => setActiveTab('payroll')}
-                      style={{ navBtnStyle, background: activeTab === 'payroll' ? '#161822' : 'transparent' }}
+                      style={{ cursor: 'pointer' }}
                     >
                       <DollarSign size={16} /> Payroll &amp; Tax
-                    </button>
-                    <button
-                      type="button"
+                    </div>
+                    <div
+                      role="button"
+                      tabIndex={0}
                       className={`dash-nav-item ${activeTab === 'attendance' ? 'active' : ''}`}
                       onClick={() => setActiveTab('attendance')}
-                      style={{ navBtnStyle, background: activeTab === 'attendance' ? '#161822' : 'transparent' }}
+                      style={{ cursor: 'pointer' }}
                     >
                       <Clock size={16} /> Attendance
-                    </button>
-                    <button
-                      type="button"
+                    </div>
+                    <div
+                      role="button"
+                      tabIndex={0}
                       className={`dash-nav-item ${activeTab === 'leave' ? 'active' : ''}`}
                       onClick={() => setActiveTab('leave')}
-                      style={{ navBtnStyle, background: activeTab === 'leave' ? '#161822' : 'transparent' }}
+                      style={{ cursor: 'pointer' }}
                     >
                       <Calendar size={16} /> Leave (PTO)
-                    </button>
-                    <button
-                      type="button"
+                    </div>
+                    <div
+                      role="button"
+                      tabIndex={0}
                       className={`dash-nav-item ${activeTab === 'performance' ? 'active' : ''}`}
                       onClick={() => setActiveTab('performance')}
-                      style={{ navBtnStyle, background: activeTab === 'performance' ? '#161822' : 'transparent' }}
+                      style={{ cursor: 'pointer' }}
                     >
                       <Award size={16} /> Reviews
-                    </button>
-                    <button
-                      type="button"
+                    </div>
+                    <div
                       className="dash-nav-item"
-                      style={navBtnStyle}
+                      style={{ cursor: 'pointer' }}
                     >
                       <Settings size={16} /> Settings
-                    </button>
+                    </div>
                 </div>
                 <div className="sidebar-footer">
                   <div className="compliance-tag">
