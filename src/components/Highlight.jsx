@@ -7,14 +7,16 @@ const SecuritySection = () => {
 
   return (
     <section id="security" className="security-section">
-      <div className="security-container scroll-reveal" ref={addToRefs}>
-        <div className="section-pill">Security &amp; Compliance</div>
-        <h2 className="apple-header">Protecting your sensitive<br />employee records.</h2>
-        <p className="section-desc">
-          Employee identity records, bank account details, salary compensation, and benefits elections are safeguarded with strict encryption and access controls.
-        </p>
+      <div className="security-container">
+        <div className="section-header scroll-reveal" ref={addToRefs}>
+          <div className="section-pill">Security &amp; Compliance</div>
+          <h2 className="apple-header">Protecting your sensitive<br />employee records.</h2>
+          <p className="section-desc">
+            Employee identity records, bank account details, salary compensation, and benefits elections are safeguarded with strict encryption and access controls.
+          </p>
+        </div>
 
-        <div className="security-grid">
+        <div className="security-grid scroll-reveal" ref={addToRefs}>
           <div className="security-card">
             <div className="security-icon-wrap"><ShieldCheck size={28} /></div>
             <h4>SOC 2 Type II Certified</h4>
