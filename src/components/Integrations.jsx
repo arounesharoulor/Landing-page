@@ -15,8 +15,8 @@ const integrationsList = [
   },
   {
     icon: Database,
-    name: 'QuickBooks, Xero & NetSuite',
-    desc: 'Export completed pay runs, tax withholdings, and employee reimbursements directly into your general ledger.'
+    name: 'TallyPrime, Zoho Books & QuickBooks',
+    desc: 'Export completed monthly pay runs, TDS withholdings, and employee reimbursements directly into your accounting software.'
   },
   {
     icon: ShieldCheck,
@@ -25,13 +25,13 @@ const integrationsList = [
   },
   {
     icon: Briefcase,
-    name: 'LinkedIn & Indeed',
-    desc: 'Publish job openings directly to top job boards with one click and gather applicant resumes into your hiring pipeline.'
+    name: 'LinkedIn, Naukri & Indeed',
+    desc: 'Publish job openings directly to top job portals with one click and gather applicant resumes into your hiring pipeline.'
   },
   {
     icon: CreditCard,
-    name: 'Corporate Cards & Receipts',
-    desc: 'Import credit card transactions, snap photos of receipts from mobile phones, and approve expense claims without paper forms.'
+    name: 'Corporate Cards & GST Reimbursements',
+    desc: 'Import card and UPI transactions, snap photos of GST bills from mobile phones, and approve employee claims without paper forms.'
   }
 ];
 

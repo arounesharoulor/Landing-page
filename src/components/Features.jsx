@@ -59,17 +59,17 @@ const Features = () => {
           <div className="mini-payroll-widget">
             <div className="pay-row">
               <span>Gross Wages</span>
-              <span className="pay-val">$24,500.00</span>
+              <span className="pay-val">₹3,45,000.00</span>
             </div>
             <div className="pay-row muted">
               <span>Taxes &amp; Deductions</span>
-              <span className="pay-val">-$5,820.00</span>
+              <span className="pay-val">-₹68,000.00</span>
             </div>
             <div className="pay-row net">
               <span>Net Pay</span>
-              <span className="pay-val highlight">$18,680.00</span>
+              <span className="pay-val highlight">₹2,77,000.00</span>
             </div>
-            <div className="pay-status-tag">Direct Deposit: Processed</div>
+            <div className="pay-status-tag">NEFT / IMPS Transfer: Processed</div>
           </div>
         </div>
         
@@ -126,14 +126,14 @@ const Features = () => {
             <h3>Expense Claims</h3>
             <p className="small-text">Employees submit photos of business receipts from their phones for manager review and payout.</p>
           </div>
-          <div className="mini-widget-tag">Reimbursed: $148.50 Client Travel</div>
+          <div className="mini-widget-tag">Reimbursed: ₹4,850 Client Travel</div>
         </div>
 
         <div className="bento-card bento-small scroll-reveal" ref={addToRefs}>
            <div className="bento-content">
             <div className="bento-icon-wrapper"><HeartPulse size={22} /></div>
             <h3>Benefits &amp; Health Plans</h3>
-            <p className="small-text">Manage company health, dental, and vision insurance policies alongside retirement and pension plans.</p>
+            <p className="small-text">Manage company group health, Gratuity, and Provident Fund (PF) records alongside statutory pension plans.</p>
           </div>
           <div className="mini-widget-tag blue">Group Health &amp; PF Active</div>
         </div>

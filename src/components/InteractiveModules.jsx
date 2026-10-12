@@ -8,11 +8,11 @@ const modulesData = [
     title: 'Payroll & Tax',
     icon: CreditCard,
     badge: 'Accurate Tax Withholdings',
-    description: 'Run company-wide payroll in a few clicks. The system calculates statutory tax withholdings, deducts benefits, and generates bank transfer files for on-time disbursement.',
+    description: 'Run company-wide payroll in a few clicks. The system calculates statutory Indian tax withholdings (PF, ESI, Professional Tax, TDS), deducts benefits, and generates bank transfer files for on-time NEFT/IMPS disbursement.',
     stats: [
       { label: 'Pay Period', value: 'Oct 01 - Oct 15, 2026' },
-      { label: 'Total Net Payroll', value: '$184,200.00' },
-      { label: 'Direct Deposits', value: '148 of 148 Verified' }
+      { label: 'Total Net Payroll', value: '₹18,42,000.00' },
+      { label: 'Bank Transfers', value: '148 of 148 Verified' }
     ]
   },
   {
@@ -138,45 +138,45 @@ const InteractiveModules = () => {
                   <span>Employee Name</span>
                   <span>Department &amp; Role</span>
                   <span>Gross Pay</span>
-                  <span>Tax Withholdings</span>
-                  <span>Benefits Deductions</span>
+                  <span>TDS &amp; PT</span>
+                  <span>PF &amp; ESI</span>
                   <span>Net Pay</span>
                   <span>Status</span>
                 </div>
                 <div className="mock-tr">
                   <span className="emp-cell"><strong>Deepa Krishnan</strong></span>
                   <span>Product Design Lead</span>
-                  <span>$6,400.00</span>
-                  <span>-$1,490.00</span>
-                  <span>-$330.00</span>
-                  <span className="emp-net">$4,580.00</span>
+                  <span>₹95,000.00</span>
+                  <span>-₹12,400.00</span>
+                  <span>-₹4,600.00</span>
+                  <span className="emp-net">₹78,000.00</span>
                   <span className="status active">Verified</span>
                 </div>
                 <div className="mock-tr">
                   <span className="emp-cell"><strong>Aravind Swaminathan</strong></span>
                   <span>Software Engineer</span>
-                  <span>$5,850.00</span>
-                  <span>-$1,360.00</span>
-                  <span>-$290.00</span>
-                  <span className="emp-net">$4,200.00</span>
+                  <span>₹82,000.00</span>
+                  <span>-₹9,800.00</span>
+                  <span>-₹4,200.00</span>
+                  <span className="emp-net">₹68,000.00</span>
                   <span className="status active">Verified</span>
                 </div>
                 <div className="mock-tr">
                   <span className="emp-cell"><strong>Kavitha Rajendran</strong></span>
                   <span>Marketing Manager</span>
-                  <span>$5,200.00</span>
-                  <span>-$1,210.00</span>
-                  <span>-$260.00</span>
-                  <span className="emp-net">$3,730.00</span>
+                  <span>₹74,000.00</span>
+                  <span>-₹8,200.00</span>
+                  <span>-₹3,800.00</span>
+                  <span className="emp-net">₹62,000.00</span>
                   <span className="status active">Verified</span>
                 </div>
                 <div className="mock-tr">
                   <span className="emp-cell"><strong>Manoj Kumar</strong></span>
                   <span>Operations Coordinator</span>
-                  <span>$4,300.00</span>
-                  <span>-$990.00</span>
-                  <span>-$210.00</span>
-                  <span className="emp-net">$3,100.00</span>
+                  <span>₹52,000.00</span>
+                  <span>-₹4,500.00</span>
+                  <span>-₹3,000.00</span>
+                  <span className="emp-net">₹44,500.00</span>
                   <span className="status active">Verified</span>
                 </div>
               </div>
@@ -330,19 +330,19 @@ const InteractiveModules = () => {
                   <div className="budget-breakdown">
                     <div className="budget-row">
                       <span>Engineering &amp; Product</span>
-                      <span>42% &bull; $77.4k</span>
+                      <span>42% &bull; ₹7.7 Lakhs</span>
                     </div>
                     <div className="budget-row">
                       <span>Sales &amp; Marketing</span>
-                      <span>28% &bull; $51.6k</span>
+                      <span>28% &bull; ₹5.1 Lakhs</span>
                     </div>
                     <div className="budget-row">
                       <span>Customer Support</span>
-                      <span>18% &bull; $33.2k</span>
+                      <span>18% &bull; ₹3.3 Lakhs</span>
                     </div>
                     <div className="budget-row">
                       <span>Operations &amp; Admin</span>
-                      <span>12% &bull; $22.0k</span>
+                      <span>12% &bull; ₹2.2 Lakhs</span>
                     </div>
                   </div>
                   <div className="analytics-footer-note">All records exportable to Excel / CSV / PDF</div>

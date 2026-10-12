@@ -9,7 +9,7 @@ const employeeList = [
   { id: 5, name: 'Senthil Kumar', role: 'DevOps & Cloud Engineer • Madurai, TN', dept: 'Engineering', meta: 'Onboarding Checklist (3/4)', status: 'Onboarding', avatar: 'SK', color: 'green' }
 ];
 
-const Hero = () => {
+const Hero = ({ openModal }) => {
   const [activeTab, setActiveTab] = useState('directory');
   const [searchQuery, setSearchQuery] = useState('');
   const [leaveStatus, setLeaveStatus] = useState({ 1: false, 2: false });
@@ -40,7 +40,13 @@ const Hero = () => {
           Calculate accurate payroll taxes, track daily attendance, manage employee records, and approve time-off requests with PeopleDesk.
         </p>
         <div className="hero-cta hero-anim fade-in-up delay-2">
-          <a href="#pricing" className="btn btn-primary btn-large">Start free 14-day trial</a>
+          <button
+            type="button"
+            onClick={() => (openModal ? openModal('trial') : (window.location.hash = '#pricing'))}
+            className="btn btn-primary btn-large"
+          >
+            Start free 14-day trial
+          </button>
           <a href="#interactive-preview" className="btn btn-secondary btn-large">View live demo &gt;</a>
         </div>
       </div>
@@ -104,7 +110,7 @@ const Hero = () => {
                 </div>
                 <div className="sidebar-footer">
                   <div className="compliance-tag">
-                    <ShieldCheck size={14} /> SOC 2 Type II Certified
+                    <ShieldCheck size={14} /> ISO 27001 &amp; DPDP Act Ready
                   </div>
                 </div>
             </div>
@@ -145,8 +151,8 @@ const Hero = () => {
                         </div>
                         <div className="stat-card">
                             <div className="stat-title">October Payroll</div>
-                            <div className="stat-value">$184,200</div>
-                            <div className="stat-trend">Direct Deposit Scheduled</div>
+                            <div className="stat-value">₹18,42,000</div>
+                            <div className="stat-trend">NEFT / IMPS Scheduled</div>
                         </div>
                         <div className="stat-card">
                             <div className="stat-title">Present Today</div>
@@ -193,40 +199,40 @@ const Hero = () => {
                           <>
                             <div className="table-header-row">
                               <span className="table-title">Semi-Monthly Pay Run (Oct 1 - Oct 15)</span>
-                              <span className="table-action">Direct Deposit: Oct 15</span>
+                              <span className="table-action">Disbursement: Oct 15</span>
                             </div>
                             <div className="table-row">
                               <div className="user-info">
                                 <div className="avatar sm blue">KS</div>
                                 <div>
                                   <div className="user-name">Karthik Subramanian</div>
-                                  <div className="user-role">Gross: $6,200.00 &bull; Taxes: -$1,450.00</div>
+                                  <div className="user-role">Gross: ₹95,000.00 &bull; PF &amp; TDS: -₹14,500.00</div>
                                 </div>
                               </div>
-                              <div className="table-meta" style={{ color: '#10b981', fontWeight: 600 }}>Net $4,440.00</div>
-                              <div className="status active">Direct Deposit</div>
+                              <div className="table-meta" style={{ color: '#10b981', fontWeight: 600 }}>Net ₹80,500.00</div>
+                              <div className="status active">Bank Transfer</div>
                             </div>
                             <div className="table-row">
                               <div className="user-info">
                                 <div className="avatar sm green">PN</div>
                                 <div>
                                   <div className="user-name">Priya Natarajan</div>
-                                  <div className="user-role">Gross: $5,900.00 &bull; Taxes: -$1,380.00</div>
+                                  <div className="user-role">Gross: ₹88,000.00 &bull; PF &amp; TDS: -₹13,200.00</div>
                                 </div>
                               </div>
-                              <div className="table-meta" style={{ color: '#10b981', fontWeight: 600 }}>Net $4,225.00</div>
-                              <div className="status active">Direct Deposit</div>
+                              <div className="table-meta" style={{ color: '#10b981', fontWeight: 600 }}>Net ₹74,800.00</div>
+                              <div className="status active">Bank Transfer</div>
                             </div>
                             <div className="table-row">
                               <div className="user-info">
                                 <div className="avatar sm purple">AS</div>
                                 <div>
                                   <div className="user-name">Anand Selvam</div>
-                                  <div className="user-role">Gross: $4,100.00 &bull; Taxes: -$960.00</div>
+                                  <div className="user-role">Gross: ₹62,000.00 &bull; PF &amp; TDS: -₹8,900.00</div>
                                 </div>
                               </div>
-                              <div className="table-meta" style={{ color: '#10b981', fontWeight: 600 }}>Net $2,920.00</div>
-                              <div className="status active">Direct Deposit</div>
+                              <div className="table-meta" style={{ color: '#10b981', fontWeight: 600 }}>Net ₹53,100.00</div>
+                              <div className="status active">Bank Transfer</div>
                             </div>
                           </>
                         )}
@@ -389,8 +395,8 @@ const Hero = () => {
         </div>
         <div className="trust-divider"></div>
         <div className="trust-item">
-          <span className="trust-num">50 States</span>
-          <span className="trust-label">Full Tax Law Compliance</span>
+          <span className="trust-num">All States</span>
+          <span className="trust-label">PF, ESI, PT &amp; Labour Compliance</span>
         </div>
       </div>
     </section>

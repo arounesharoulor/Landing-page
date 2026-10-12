@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -11,25 +11,41 @@ import Pricing from './components/Pricing';
 import FAQ from './components/FAQ';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
+import TrialModal from './components/TrialModal';
 import './index.css';
 
 function App() {
+  const [modalConfig, setModalConfig] = useState({ isOpen: false, mode: 'trial' });
+
+  const openModal = (mode = 'trial') => {
+    setModalConfig({ isOpen: true, mode });
+  };
+
+  const closeModal = () => {
+    setModalConfig((prev) => ({ ...prev, isOpen: false }));
+  };
+
   return (
     <div className="app-container">
-      <Navbar />
+      <Navbar openModal={openModal} />
       <main id="main-content">
-        <Hero />
+        <Hero openModal={openModal} />
         <Features />
         <InteractiveModules />
         <Solutions />
         <Integrations />
         <Highlight />
         <Testimonials />
-        <Pricing />
+        <Pricing openModal={openModal} />
         <FAQ />
-        <CTASection />
+        <CTASection openModal={openModal} />
       </main>
-      <Footer />
+      <Footer openModal={openModal} />
+      <TrialModal
+        isOpen={modalConfig.isOpen}
+        mode={modalConfig.mode}
+        onClose={closeModal}
+      />
     </div>
   );
 }
