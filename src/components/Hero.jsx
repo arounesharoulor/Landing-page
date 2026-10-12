@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Users, DollarSign, Calendar, Settings, Bell, Search, Clock, Award, ShieldCheck } from 'lucide-react';
 
 const employeeList = [
-  { id: 1, name: 'Karthik Subramanian', role: 'Lead Software Engineer • Chennai, OMR', dept: 'Engineering', meta: 'Started Sept 15, 2023', status: 'Active', avatar: 'KS', color: 'blue' },
+  { id: 1, name: 'Karthik Subramanian', role: 'Lead Software Engineer • Chennai, OMR', dept: 'Engineering', meta: 'Started Sept 15, 2026', status: 'Active', avatar: 'KS', color: 'blue' },
   { id: 2, name: 'Priya Natarajan', role: 'Product Designer • Coimbatore, TN', dept: 'Design', meta: 'Tax Forms & Bank Verified', status: 'Active', avatar: 'PN', color: 'green' },
   { id: 3, name: 'Anand Selvam', role: 'Customer Operations Lead • Bengaluru, KA', dept: 'Support', meta: 'Direct Deposit Set Up', status: 'Active', avatar: 'AS', color: 'purple' },
   { id: 4, name: 'Divya Ramachandran', role: 'Senior Financial Analyst • Chennai, Guindy', dept: 'Finance', meta: 'Benefits Enrolled', status: 'Active', avatar: 'DR', color: 'blue' },
@@ -124,7 +124,7 @@ const Hero = () => {
                           outline: 'none',
                           color: '#fff',
                           fontSize: '0.8rem',
-                          fontFamily: 'inherit',
+                          fontFamily: "'Inter', sans-serif",
                           width: '100%'
                         }}
                       />
@@ -300,7 +300,7 @@ const Hero = () => {
                                   fontSize: '0.7rem',
                                   cursor: 'pointer',
                                   fontWeight: 500,
-                                  fontFamily: 'inherit'
+                                  fontFamily: "'Inter', sans-serif"
                                 }}
                               >
                                 {leaveStatus[1] ? 'Approved ✓' : 'Approve Request'}
@@ -327,7 +327,7 @@ const Hero = () => {
                                   fontSize: '0.7rem',
                                   cursor: 'pointer',
                                   fontWeight: 500,
-                                  fontFamily: 'inherit'
+                                  fontFamily: "'Inter', sans-serif"
                                 }}
                               >
                                 {leaveStatus[2] ? 'Approved ✓' : 'Approve Request'}

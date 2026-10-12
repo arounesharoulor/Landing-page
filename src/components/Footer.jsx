@@ -40,7 +40,7 @@ const Footer = () => {
           <div className="link-column">
             <h4>Resources</h4>
             <a href="#faq">Help Center &amp; FAQ</a>
-            <a href="#">2025 Labor Law Guide</a>
+            <a href="#">2026 Labor Law Guide</a>
             <a href="#">State Tax Calculator</a>
             <a href="#">Employee Handbook Guide</a>
             <a href="#">API Documentation</a>
@@ -58,7 +58,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2025 PeopleDesk Systems, Inc. All rights reserved.</p>
+        <p>&copy; 2026 PeopleDesk Systems, Inc. All rights reserved.</p>
         <div className="footer-bottom-badges">
           <span>SOC 2 Type II Certified</span> &bull; <span>GDPR Compliant</span> &bull; <span>ISO 27001</span>
         </div>
