@@ -9,6 +9,15 @@ const employeeList = [
   { id: 5, name: 'Senthil Kumar', role: 'DevOps & Cloud Engineer • Madurai, TN', dept: 'Engineering', meta: 'Onboarding Checklist (3/4)', status: 'Onboarding', avatar: 'SK', color: 'green' }
 ];
 
+const navBtnStyle = {
+  background: 'transparent',
+  border: 'none',
+  width: '100%',
+  textAlign: 'left',
+  cursor: 'pointer',
+  fontFamily: 'inherit'
+};
+
 const Hero = () => {
   const [activeTab, setActiveTab] = useState('directory');
   const [searchQuery, setSearchQuery] = useState('');
@@ -47,7 +56,6 @@ const Hero = () => {
       
       <div className="hero-visual hero-anim fade-in-up delay-3">
          <div className="dashboard-mockup">
-            {/* Interactive Sidebar */}
             <div className="dash-sidebar">
                 <div className="dash-logo">PeopleDesk</div>
                 <div className="dash-nav">
@@ -55,7 +63,7 @@ const Hero = () => {
                       type="button"
                       className={`dash-nav-item ${activeTab === 'directory' ? 'active' : ''}`}
                       onClick={() => setActiveTab('directory')}
-                      style={{ background: activeTab === 'directory' ? '#161822' : 'transparent', border: 'none', width: '100%', textAlign: 'left', cursor: 'pointer', fontFamily: 'inherit' }}
+                      style={{ ...navBtnStyle, background: activeTab === 'directory' ? '#161822' : 'transparent' }}
                     >
                       <Users size={16} /> Directory
                     </button>
@@ -63,7 +71,7 @@ const Hero = () => {
                       type="button"
                       className={`dash-nav-item ${activeTab === 'payroll' ? 'active' : ''}`}
                       onClick={() => setActiveTab('payroll')}
-                      style={{ background: activeTab === 'payroll' ? '#161822' : 'transparent', border: 'none', width: '100%', textAlign: 'left', cursor: 'pointer', fontFamily: 'inherit' }}
+                      style={{ ...navBtnStyle, background: activeTab === 'payroll' ? '#161822' : 'transparent' }}
                     >
                       <DollarSign size={16} /> Payroll &amp; Tax
                     </button>
@@ -71,7 +79,7 @@ const Hero = () => {
                       type="button"
                       className={`dash-nav-item ${activeTab === 'attendance' ? 'active' : ''}`}
                       onClick={() => setActiveTab('attendance')}
-                      style={{ background: activeTab === 'attendance' ? '#161822' : 'transparent', border: 'none', width: '100%', textAlign: 'left', cursor: 'pointer', fontFamily: 'inherit' }}
+                      style={{ ...navBtnStyle, background: activeTab === 'attendance' ? '#161822' : 'transparent' }}
                     >
                       <Clock size={16} /> Attendance
                     </button>
@@ -79,7 +87,7 @@ const Hero = () => {
                       type="button"
                       className={`dash-nav-item ${activeTab === 'leave' ? 'active' : ''}`}
                       onClick={() => setActiveTab('leave')}
-                      style={{ background: activeTab === 'leave' ? '#161822' : 'transparent', border: 'none', width: '100%', textAlign: 'left', cursor: 'pointer', fontFamily: 'inherit' }}
+                      style={{ ...navBtnStyle, background: activeTab === 'leave' ? '#161822' : 'transparent' }}
                     >
                       <Calendar size={16} /> Leave (PTO)
                     </button>
@@ -87,14 +95,14 @@ const Hero = () => {
                       type="button"
                       className={`dash-nav-item ${activeTab === 'performance' ? 'active' : ''}`}
                       onClick={() => setActiveTab('performance')}
-                      style={{ background: activeTab === 'performance' ? '#161822' : 'transparent', border: 'none', width: '100%', textAlign: 'left', cursor: 'pointer', fontFamily: 'inherit' }}
+                      style={{ ...navBtnStyle, background: activeTab === 'performance' ? '#161822' : 'transparent' }}
                     >
                       <Award size={16} /> Reviews
                     </button>
                     <button
                       type="button"
                       className="dash-nav-item"
-                      style={{ background: 'transparent', border: 'none', width: '100%', textAlign: 'left', cursor: 'pointer', fontFamily: 'inherit' }}
+                      style={navBtnStyle}
                     >
                       <Settings size={16} /> Settings
                     </button>
@@ -106,7 +114,6 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Main Interactive Screen */}
             <div className="dash-main">
                 <div className="dash-header">
                     <div className="dash-search">
@@ -135,7 +142,6 @@ const Hero = () => {
                 </div>
 
                 <div className="dash-content">
-                    {/* Key Stats Bar */}
                     <div className="dash-stats">
                         <div className="stat-card">
                             <div className="stat-title">Total Employees</div>
@@ -154,7 +160,6 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    {/* Dynamic View Tab Body */}
                     <div className="dash-table-area">
                         {activeTab === 'directory' && (
                           <>
@@ -372,7 +377,6 @@ const Hero = () => {
          </div>
       </div>
 
-      {/* Trust & Credibility Metrics Strip */}
       <div className="trust-strip hero-anim fade-in-up delay-3">
         <div className="trust-item">
           <span className="trust-num">1,400+</span>

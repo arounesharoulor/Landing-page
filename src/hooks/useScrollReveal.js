@@ -10,7 +10,6 @@ export const useScrollReveal = () => {
           if (entry.isIntersecting) {
             entry.target.classList.add('is-visible');
           } else {
-            // Remove the class when it goes out of view so it animates again when scrolling back
             entry.target.classList.remove('is-visible');
           }
         });

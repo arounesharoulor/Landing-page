@@ -16,7 +16,6 @@ const Features = () => {
       </div>
       
       <div className="bento-grid">
-        {/* 1. Employee Directory (Span 2) */}
         <div className="bento-card bento-large fade-in-left" ref={addToRefs}>
           <div className="bento-content">
             <div className="bento-icon-wrapper"><Users size={22} /></div>
@@ -51,7 +50,6 @@ const Features = () => {
           </div>
         </div>
         
-        {/* 2. Payroll & Direct Deposit (Span 1) */}
         <div className="bento-card bento-medium fade-in-right" ref={addToRefs}>
           <div className="bento-content">
             <div className="bento-icon-wrapper"><CreditCard size={22} /></div>
@@ -75,7 +73,6 @@ const Features = () => {
           </div>
         </div>
         
-        {/* 3. Time & Attendance (Span 1) */}
         <div className="bento-card bento-small fade-in-right" ref={addToRefs}>
            <div className="bento-content">
             <div className="bento-icon-wrapper"><Clock size={22} /></div>
@@ -87,7 +84,6 @@ const Features = () => {
           </div>
         </div>
         
-        {/* 4. Leave & PTO Tracking (Span 1) */}
         <div className="bento-card bento-small fade-in-right" ref={addToRefs} style={{transitionDelay: '0.1s'}}>
            <div className="bento-content">
             <div className="bento-icon-wrapper"><PlaneTakeoff size={22} /></div>
@@ -97,7 +93,6 @@ const Features = () => {
           <div className="mini-widget-tag blue">PTO Balance: 14 Days Remaining</div>
         </div>
         
-        {/* 5. Recruiting (ATS) (Span 1) */}
         <div className="bento-card bento-small scroll-reveal" ref={addToRefs}>
            <div className="bento-content">
             <div className="bento-icon-wrapper"><Briefcase size={22} /></div>
@@ -107,7 +102,6 @@ const Features = () => {
           <div className="mini-widget-tag">Applicant Stage: Technical Review</div>
         </div>
         
-        {/* 6. Digital Onboarding (Span 1) */}
         <div className="bento-card bento-small scroll-reveal" ref={addToRefs} style={{transitionDelay: '0.1s'}}>
            <div className="bento-content">
             <div className="bento-icon-wrapper"><FileText size={22} /></div>
@@ -117,7 +111,6 @@ const Features = () => {
           <div className="mini-widget-tag green">Checklist: All 4 Steps Completed</div>
         </div>
         
-        {/* 7. Performance Reviews (Span 1) */}
         <div className="bento-card bento-small scroll-reveal" ref={addToRefs} style={{transitionDelay: '0.2s'}}>
            <div className="bento-content">
             <div className="bento-icon-wrapper"><TrendingUp size={22} /></div>
@@ -127,7 +120,6 @@ const Features = () => {
           <div className="mini-widget-tag purple">Annual Review: 4.8 / 5.0 Rating</div>
         </div>
         
-        {/* 8. Expenses & Reimbursements (Span 1) */}
         <div className="bento-card bento-small scroll-reveal" ref={addToRefs} style={{transitionDelay: '0.3s'}}>
            <div className="bento-content">
             <div className="bento-icon-wrapper"><Receipt size={22} /></div>
@@ -137,7 +129,6 @@ const Features = () => {
           <div className="mini-widget-tag">Reimbursed: $148.50 Client Travel</div>
         </div>
 
-        {/* 9. Benefits Administration (Span 1) */}
         <div className="bento-card bento-small scroll-reveal" ref={addToRefs}>
            <div className="bento-content">
             <div className="bento-icon-wrapper"><HeartPulse size={22} /></div>
@@ -147,7 +138,6 @@ const Features = () => {
           <div className="mini-widget-tag blue">401(k) Match Active</div>
         </div>
 
-        {/* 10. Employee Self-Service (ESS) (Span 2) */}
         <div className="bento-card bento-large scroll-reveal" ref={addToRefs} style={{transitionDelay: '0.15s'}}>
            <div className="bento-content">
             <div className="bento-icon-wrapper"><Smartphone size={22} /></div>

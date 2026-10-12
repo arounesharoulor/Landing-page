@@ -102,7 +102,6 @@ const InteractiveModules = () => {
       </div>
 
       <div className="module-preview-container scroll-reveal" ref={addToRefs}>
-        {/* Module Header Bar */}
         <div className="preview-top-bar">
           <div className="preview-meta">
             <span className="preview-badge">{currentModule.badge}</span>
@@ -118,7 +117,6 @@ const InteractiveModules = () => {
           </div>
         </div>
 
-        {/* Dynamic Interactive View */}
         <div className="preview-screen-body">
           {activeTab === 'payroll' && (
             <div className="mock-payroll-view">

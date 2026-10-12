@@ -15,7 +15,6 @@ const Pricing = () => {
           Transparent per-employee monthly pricing. Switch tiers or cancel anytime with prorated billing.
         </p>
 
-        {/* Billing Switcher Toggle */}
         <div className="billing-toggle-wrap">
           <span className={!isAnnual ? 'active-label' : 'inactive-label'}>Monthly Billing</span>
           <button
@@ -32,7 +31,6 @@ const Pricing = () => {
       </div>
       
       <div className="pricing-grid">
-        {/* Tier 1: Starter */}
         <div className="pricing-card scroll-reveal" ref={addToRefs}>
           <div className="card-tier-title">Starter</div>
           <p className="tier-tagline">Essential HR records and onboarding for small teams.</p>
@@ -51,7 +49,6 @@ const Pricing = () => {
           <a href="#cta" className="btn btn-secondary card-btn">Start 14-Day Free Trial</a>
         </div>
         
-        {/* Tier 2: Professional (Featured) */}
         <div className="pricing-card featured scroll-reveal" ref={addToRefs}>
           <div className="badge"><Sparkles size={13} /> Most Popular</div>
           <div className="card-tier-title">Professional</div>
@@ -73,7 +70,6 @@ const Pricing = () => {
           <a href="#cta" className="btn btn-primary card-btn">Start 14-Day Free Trial</a>
         </div>
 
-        {/* Tier 3: Enterprise */}
         <div className="pricing-card scroll-reveal" ref={addToRefs}>
           <div className="card-tier-title">Enterprise</div>
           <p className="tier-tagline">Advanced controls and custom setup for larger companies.</p>
