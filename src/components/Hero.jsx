@@ -63,7 +63,7 @@ const Hero = () => {
                       type="button"
                       className={`dash-nav-item ${activeTab === 'directory' ? 'active' : ''}`}
                       onClick={() => setActiveTab('directory')}
-                      style={{ ...navBtnStyle, background: activeTab === 'directory' ? '#161822' : 'transparent' }}
+                      style={{ navBtnStyle, background: activeTab === 'directory' ? '#161822' : 'transparent' }}
                     >
                       <Users size={16} /> Directory
                     </button>
@@ -71,7 +71,7 @@ const Hero = () => {
                       type="button"
                       className={`dash-nav-item ${activeTab === 'payroll' ? 'active' : ''}`}
                       onClick={() => setActiveTab('payroll')}
-                      style={{ ...navBtnStyle, background: activeTab === 'payroll' ? '#161822' : 'transparent' }}
+                      style={{ navBtnStyle, background: activeTab === 'payroll' ? '#161822' : 'transparent' }}
                     >
                       <DollarSign size={16} /> Payroll &amp; Tax
                     </button>
@@ -79,7 +79,7 @@ const Hero = () => {
                       type="button"
                       className={`dash-nav-item ${activeTab === 'attendance' ? 'active' : ''}`}
                       onClick={() => setActiveTab('attendance')}
-                      style={{ ...navBtnStyle, background: activeTab === 'attendance' ? '#161822' : 'transparent' }}
+                      style={{ navBtnStyle, background: activeTab === 'attendance' ? '#161822' : 'transparent' }}
                     >
                       <Clock size={16} /> Attendance
                     </button>
@@ -87,7 +87,7 @@ const Hero = () => {
                       type="button"
                       className={`dash-nav-item ${activeTab === 'leave' ? 'active' : ''}`}
                       onClick={() => setActiveTab('leave')}
-                      style={{ ...navBtnStyle, background: activeTab === 'leave' ? '#161822' : 'transparent' }}
+                      style={{ navBtnStyle, background: activeTab === 'leave' ? '#161822' : 'transparent' }}
                     >
                       <Calendar size={16} /> Leave (PTO)
                     </button>
@@ -95,7 +95,7 @@ const Hero = () => {
                       type="button"
                       className={`dash-nav-item ${activeTab === 'performance' ? 'active' : ''}`}
                       onClick={() => setActiveTab('performance')}
-                      style={{ ...navBtnStyle, background: activeTab === 'performance' ? '#161822' : 'transparent' }}
+                      style={{ navBtnStyle, background: activeTab === 'performance' ? '#161822' : 'transparent' }}
                     >
                       <Award size={16} /> Reviews
                     </button>
