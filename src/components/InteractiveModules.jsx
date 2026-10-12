@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import { CreditCard, Clock, Briefcase, Award, BarChart3, CheckCircle2, ChevronRight, Download, Filter, MapPin } from 'lucide-react';
+import { CreditCard, Clock, Briefcase, Award, BarChart3, CheckCircle2, MapPin } from 'lucide-react';
 
 const modulesData = [
   {

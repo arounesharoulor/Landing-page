@@ -58,7 +58,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} PeopleDesk Systems, Inc. All rights reserved.</p>
+        <p>&copy; 2026 PeopleDesk Systems, Inc. All rights reserved.</p>
         <div className="footer-bottom-badges">
           <span>SOC 2 Type II Certified</span> &bull; <span>GDPR Compliant</span> &bull; <span>ISO 27001</span>
         </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Users, DollarSign, Calendar, Settings, Bell, Search, Clock, Award, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { Users, DollarSign, Calendar, Settings, Bell, Search, Clock, Award, ShieldCheck } from 'lucide-react';
 
 const employeeList = [
   { id: 1, name: 'Karthik Subramanian', role: 'Lead Software Engineer • Chennai, OMR', dept: 'Engineering', meta: 'Started Sept 15, 2026', status: 'Active', avatar: 'KS', color: 'blue' },
