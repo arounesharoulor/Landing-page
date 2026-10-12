@@ -54,7 +54,7 @@ const Features = () => {
           <div className="bento-content">
             <div className="bento-icon-wrapper"><CreditCard size={22} /></div>
             <h3>Payroll &amp; Direct Deposit</h3>
-            <p>Calculate federal, state, and local taxes, handle 401(k) deductions, and disburse paychecks via ACH direct deposit on schedule.</p>
+            <p>Calculate tax withholdings, statutory benefits and deductions, and disburse salaries via direct bank transfer on schedule.</p>
           </div>
           <div className="mini-payroll-widget">
             <div className="pay-row">
@@ -106,7 +106,7 @@ const Features = () => {
            <div className="bento-content">
             <div className="bento-icon-wrapper"><FileText size={22} /></div>
             <h3>New Hire Onboarding</h3>
-            <p className="small-text">Send digital welcome packets, collect W-4 and I-9 forms, and get handbook agreements signed online.</p>
+            <p className="small-text">Send digital welcome packets, collect tax declarations and ID proofs, and get handbook agreements signed online.</p>
           </div>
           <div className="mini-widget-tag green">Checklist: All 4 Steps Completed</div>
         </div>
@@ -133,9 +133,9 @@ const Features = () => {
            <div className="bento-content">
             <div className="bento-icon-wrapper"><HeartPulse size={22} /></div>
             <h3>Benefits &amp; Health Plans</h3>
-            <p className="small-text">Manage company health, dental, and vision insurance policies alongside 401(k) matching.</p>
+            <p className="small-text">Manage company health, dental, and vision insurance policies alongside retirement and pension plans.</p>
           </div>
-          <div className="mini-widget-tag blue">401(k) Match Active</div>
+          <div className="mini-widget-tag blue">Group Health &amp; PF Active</div>
         </div>
 
         <div className="bento-card bento-large scroll-reveal" ref={addToRefs} style={{transitionDelay: '0.15s'}}>
@@ -145,7 +145,7 @@ const Features = () => {
             <p>Employees can log in on their phones or web browsers to view historical pay stubs, check PTO days, submit expense receipts, and update their bank or address details without contacting HR.</p>
           </div>
           <div className="ess-preview-bar">
-            <span>24/7 Employee Portal</span> &bull; <span>Download W-2 Forms</span> &bull; <span>Mobile Check-In</span> &bull; <span>Update Profile</span>
+            <span>24/7 Employee Portal</span> &bull; <span>Download Payslips</span> &bull; <span>Mobile Check-In</span> &bull; <span>Update Profile</span>
           </div>
         </div>
 

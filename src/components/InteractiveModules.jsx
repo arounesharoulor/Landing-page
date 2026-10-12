@@ -8,7 +8,7 @@ const modulesData = [
     title: 'Payroll & Tax',
     icon: CreditCard,
     badge: 'Accurate Tax Withholdings',
-    description: 'Run multi-state payroll in a few clicks. The system calculates federal, FICA, and state tax withholdings, deducts benefits, and schedules ACH direct deposits.',
+    description: 'Run company-wide payroll in a few clicks. The system calculates statutory tax withholdings, deducts benefits, and generates bank transfer files for on-time disbursement.',
     stats: [
       { label: 'Pay Period', value: 'Oct 01 - Oct 15, 2026' },
       { label: 'Total Net Payroll', value: '$184,200.00' },

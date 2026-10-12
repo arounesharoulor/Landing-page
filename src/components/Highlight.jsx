@@ -11,7 +11,7 @@ const SecuritySection = () => {
         <div className="section-pill">Security &amp; Compliance</div>
         <h2 className="apple-header">Protecting your sensitive<br />employee records.</h2>
         <p className="section-desc">
-          Social Security numbers, bank routing information, salary histories, and medical elections are safeguarded with strict encryption and access controls.
+          Employee identity records, bank account details, salary compensation, and benefits elections are safeguarded with strict encryption and access controls.
         </p>
 
         <div className="security-grid">
@@ -33,7 +33,7 @@ const SecuritySection = () => {
           <div className="security-card">
             <div className="security-icon-wrap"><FileCheck2 size={28} /></div>
             <h4>Labor Law &amp; Tax Compliance</h4>
-            <p>Built-in compliance checks for multi-state payroll, statutory tax filings (W-2 and 1099), and standard labor regulations.</p>
+            <p>Built-in compliance checks for automated payroll calculation, statutory deductions, tax filings, and standard labor regulations.</p>
           </div>
         </div>
       </div>

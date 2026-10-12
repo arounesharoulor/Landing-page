@@ -16,7 +16,7 @@ const solutions = [
   {
     icon: Building2,
     title: 'Growing Companies (50 – 250 Employees)',
-    desc: 'Organize growing departments, manage multi-state payroll, and run structured hiring and quarterly performance reviews.',
+    desc: 'Organize growing departments, automate monthly payroll runs, and manage structured hiring and quarterly performance reviews.',
     points: [
       'Manager approval workflows for vacation and expense claims',
       'Job applicant tracking system (ATS) with interview notes',

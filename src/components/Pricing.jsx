@@ -60,7 +60,7 @@ const Pricing = () => {
           </div>
           <ul className="tier-features">
             <li><Check size={16} /> <strong>Everything in Starter, plus:</strong></li>
-            <li><Check size={16} /> Multi-State Payroll &amp; Tax Filings</li>
+            <li><Check size={16} /> Automated Payroll &amp; Statutory Tax Filings</li>
             <li><Check size={16} /> Verified Time &amp; Attendance Tracking</li>
             <li><Check size={16} /> Job Postings &amp; Applicant Tracking (ATS)</li>
             <li><Check size={16} /> Performance Reviews &amp; Goal Setting</li>
