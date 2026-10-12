@@ -10,7 +10,7 @@ const modulesData = [
     badge: 'Accurate Tax Withholdings',
     description: 'Run multi-state payroll in a few clicks. The system calculates federal, FICA, and state tax withholdings, deducts benefits, and schedules ACH direct deposits.',
     stats: [
-      { label: 'Pay Period', value: 'Oct 01 - Oct 15, 2026' },
+      { label: 'Pay Period', value: 'Oct 01 - Oct 15, 2025' },
       { label: 'Total Net Payroll', value: '$184,200.00' },
       { label: 'Direct Deposits', value: '148 of 148 Verified' }
     ]
@@ -122,7 +122,7 @@ const InteractiveModules = () => {
             <div className="mock-payroll-view">
               <div className="payroll-table-toolbar">
                 <div className="toolbar-left">
-                  <span className="batch-id">Pay Run #PR-2026-10A</span>
+                  <span className="batch-id">Pay Run #PR-2025-10A</span>
                   <span className="period-tag">Semi-Monthly (Oct 1 - Oct 15)</span>
                 </div>
                 <button
